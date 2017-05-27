@@ -1,0 +1,26 @@
+
+<view class="in">
+<form bindreset="formReset">
+   <input class="inputtext" type="text" bindchange="sendMsg"/>
+</form>
+ 
+</view>
+
+<view class="text">{{text}}</view>
+
+
+<view class="bottomArea">
+        <form bindreset="send">
+            <view class="inputArea">
+                <input type="text" placeholder="{{placeholderText}}" class="message" bindchange="sendMsg" bindinput="bindKeyInput"/>
+            </view>
+            <button size="default" type="primary" form-type="reset" class="sendButton">发送</button>
+        </form>
+    </view>
+
+
+
+
+<button bindtap="uploadImg">上传图片</button>
+<image src="{{imgSrc}}"></image>
+<button bindtap="downImg">下载图片</button>

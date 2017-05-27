@@ -1,0 +1,49 @@
+<view class="navigations">
+    <navigator url="../../pages/navigations/index" >
+        <view class="navigation_item">我的课程</view>
+    </navigator>    
+    <navigator url="../../pages/navigation1/navigation1" >
+        <view class="navigation_item">我的作业</view>
+    </navigator>
+    <navigator url="../../pages/exdetail/exdetail" >
+        <view class="navigation_item">课程详情</view>
+    </navigator>
+    <navigator url="../../pages/navigation3/navigation3" >
+        <view class="navigation_item">聊天室</view>
+    </navigator>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover">  
+            <image src="{{item.url}}" class="slide-image" />  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper> 
+
+
+<view class="devide">我的课程</view>
+
+
+
+<view class="warp">
+<!--文章列表模板 begin-->
+  <template name="items">
+   <navigator url="../../pages/detail/detail?id={{id}}"
+   hover-class="navigator-hover">
+     <view class="imgs"><image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+     <view class="infos">
+       <view class="title">{{title}}</view>    
+     </view>  
+     </navigator>  
+  </template>
+  <view wx:for="{{newsList}}" class="list">
+    <template is="items" data="{{...item}}"/>
+  </view>
+</view>
+<view bindtap="loadMore" data-lastid="{{lastid}}" class="loadMore">加载更多</view>
+<toast hidden="{{toastHidden}}" bindchange="toastChange" duration="3000">没有更多课程了</toast>
+<modal title="温馨提示" no-cancel confirm-text="确定" hidden="{{confirmHidden}}" bindconfirm="modalChange" >不在WiFi网络下，会产生多流量费用</modal>

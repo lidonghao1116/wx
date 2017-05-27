@@ -1,0 +1,90 @@
+/* pages/choosepro/choosepro.wxss */
+
+
+
+.title{
+  font-size: 30px;
+  width: 100%;
+  height: 40px;
+  color: #2090fe;
+  text-align: center;
+  opacity: 1.0;
+  z-index: 100;
+  font-family: "微软雅黑";
+}
+
+
+.bottomArea{
+  height: 40px;
+  width:77%;
+  margin-left: 13%;
+  margin-top: 10%;
+
+
+
+  }
+
+.inputArea{ 
+  width:97%;
+  font-size:19px;
+  border-width: medium;
+  float: left;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10%;
+  height: 97%;
+  opacity: 0.7;
+  margin-bottom: 10%;
+}
+
+.message{
+  width:100%;
+  padding-left: 5%;
+  height: 99%;
+}
+
+.sendButton{
+  height: 40px;
+  font-size: 19px;
+  width:98%;
+  color: white;
+  background-color: #2090fe;
+  margin-top: 30%;
+  padding-bottom: 14%;
+  opacity: 1.0;
+}
+
+
+.close{
+    border: 1px solid #2090fe;
+    text-align: center;
+    margin-top:72px;
+     height: 27px;
+     font-size: 19px;
+    color:#2090fe;
+    width: 75%;
+    margin-left: 13%;
+    padding-top: 7px;
+    border-radius: 3%;
+}
+
+
+
+
+.linkbutton{
+    border: 1px solid #2090fe;
+    text-align: center;
+    margin-top:70px;
+     height: 27px;
+     font-size: 19px;
+    color:#2090fe;
+    width: 75%;
+    margin-left: 13%;
+    padding-top:7px;
+    border-radius: 3%;
+
+}
+
+
+
+/*/////////////////////////////////*/

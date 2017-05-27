@@ -1,0 +1,57 @@
+.title{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.navigations{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2090fe; 
+    color: white;
+}
+.navigation_item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+wx-button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+wx-label {
+  display: block;
+  margin-top: 10rpx;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+.section{
+    margin-bottom: 30rpx;
+    color: gray;
+    font-size: 12px;
+    font-family: "微软雅黑";
+
+}
+.put{
+      border-bottom: 1px solid gray;
+}
+.section_gap{
+    padding: 0 30rpx;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5%;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
+.nav{
+  width: 100%;
+}

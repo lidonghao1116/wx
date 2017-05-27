@@ -1,0 +1,186 @@
+/**index.wxss**/
+.t_red{
+  color: red;
+}
+.t_blue{
+  color: royalblue;
+}
+.calendar{
+  margin: 0 40px;
+}
+.time{
+  padding: 16rpx 20rpx;
+
+  display: flex;
+}
+.time view{
+  flex: 1;
+  font-size: 29rpx;
+
+}
+.time view text{
+  font-size: 30rpx;
+}
+.weekName{
+   background-color: gainsboro;
+  width: 100%;
+  display: flex;
+  padding: 16rpx 0;
+}
+.weekName view{
+  flex: 1;
+  text-align: center;
+}
+.sunday,.saturday{
+  color: red;
+}
+.week{
+  width: 100%;
+}
+.week view{
+  width: 14.2%;
+  height: 30rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  margin: 20rpx 0;
+  text-align: center;
+}
+.week view text{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.calendarSign{
+  margin: 20rpx;
+}
+
+
+
+
+/*立体*/
+.list{
+  width: 65%;
+  height: 40px;
+  font-family: "微软雅黑";
+  margin-left: 15%;
+  color: gray;
+  margin-top: 10px;
+  border-bottom: 1px solid lightblue;
+  padding-left: 30px;
+}
+.word{
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.demo{ 
+  width: 30px;
+  height: 30px;
+  position: relative; 
+  font-size: 20px;
+  background-color: #fff; 
+  box-shadow:5px 2px 3px lightblue; 
+  border-radius: 4px;
+  text-align: center; 
+  float: left;}  
+ .history{
+   margin-top: 30px;
+ }
+
+/*划分灰色线*/
+.devide{
+  text-align: center;
+  width: 100%;
+  height:15px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 3px; 
+  font-size: 13px;
+ 
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color:  gainsboro;
+  margin-bottom: 10px; 
+}
+.weightline{
+  margin-top: 10px;
+  height: 10px;
+  width: 100%;
+  background-color:  gainsboro;
+}
+
+
+
+
+/*////////////////////////////*/
+
+
+.send-box{
+  display:flex;
+  text-align:center;
+  border: 1px solid lightgray;
+  height: 100px;
+  width: 90%;
+  margin-left:4%; 
+  margin-top: 10px;
+  border-radius: 6px;
+  color: gray;
+}
+.but{
+  height: 25px;
+  width: 55px;
+  font-family: "微软雅黑";
+  font-size: 12px;
+  margin-top: 5px;
+  border: 1px solid #2090fe;
+  margin-right:10px; 
+
+}
+
+.msg-info{
+  display: block;
+  margin:50px 70px;
+  color:#2090fe;
+  
+}
+.input{
+
+  padding:5px;
+  text-align:left;
+  font-size: 12px;
+}
+.place-input{
+  color:#2090fe;
+}
+.list-view{
+  margin:20px 0 0 0;
+}
+.item{
+  overflow:hidden;
+  line-height: 50px;
+  height:50px;
+  padding-left: 30px;
+  background-image: url(http://mongo37-test.stor.sinaapp.com/7.png);
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  margin-left: 12px;
+  font-family: "微软雅黑";
+  color: gray;
+  margin-bottom: 7px;
+}
+.text1{
+  float:left;
+}
+/*///////////////////////*/
+.remainder{
+  width: 90%;
+  height: 200px;
+  border: 1px solid red;
+  margin-left: 3%;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  color: gray;
+}

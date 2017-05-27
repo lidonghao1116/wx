@@ -1,0 +1,25 @@
+
+<view class="title">请输入课程名称</view>
+   
+
+    <view class="bottomArea">
+        <form bindreset="send">
+            <view class="inputArea">
+                <input type="text" placeholder="{{placeholderText}}" class="message" bindinput="bindKeyInput"/>
+            </view>           
+           
+            <button  form-type="reset" class="sendButton" bindtap="listenerButton" >确认</button>
+       
+        </form>        
+    </view>
+    
+<toast hidden="{{hiddenToast}}" duration="1500" bindchange="toastHidden" >添加成功</toast>
+
+
+
+
+<view class="linkbutton" >
+      <navigator url="../../pages/allclass/allclass" >返回</navigator>
+</view>
+
+

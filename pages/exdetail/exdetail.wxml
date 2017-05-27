@@ -1,0 +1,31 @@
+<view class="navigations">
+    <navigator url="../../pages/exdetail/exdetail" >
+        <view class="navigation_item">我的课程</view>
+    </navigator>    
+    <navigator url="../../pages/classmates/classmates" >
+        <view class="navigation_item">我的同学</view>
+    </navigator>
+</view>
+
+<view class="head"><image class="headstyle" src="../../../images/head.png"></image></view>
+
+
+
+
+<view class="warp">
+<!--文章列表模板 begin-->
+  <template name="items">
+   <navigator url="../../pages/historydetail/historydetail?id={{id}}"
+   hover-class="navigator-hover">
+     <view class="imgs"><image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+     <view class="infos">
+       <view class="title">{{title}}</view>    
+     </view>  
+     </navigator>  
+  </template>
+  <view wx:for="{{newsList}}" class="list">
+    <template is="items" data="{{...item}}"/>
+  </view>
+</view>
+<view bindtap="loadMore" data-lastid="{{lastid}}" class="loadMore">加载更多</view>
+<toast hidden="{{toastHidden}}" bindchange="toastChange" duration="3000">没有更多课程了</toast>

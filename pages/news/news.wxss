@@ -1,0 +1,154 @@
+/*划分灰色线*/
+.devide{
+  text-align: center;
+  width: 100%;
+  height:21px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 3px; 
+  font-size: 20px;
+ 
+}
+.line{
+  height: 16px;
+  width: 100%;
+  background-color:  lightgray;
+}
+
+
+
+
+/* 资讯列表 */
+.title{
+    
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left: 10px;
+}
+.date{
+    padding-left: 10px;
+    font-size: 12px;
+    color: lightgray;
+}
+.navigations{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    border: 1px solid;
+    border-color: ghostwhite;
+    background-color: dodgerblue; 
+    color: white;
+}
+.navigation_item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.copyright{
+    color: white;
+    padding: 5px;
+    margin-top: 150px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-align: center;
+    background-color: darkblue;
+}
+.copyright_item{
+    margin-top: 5px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.warp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+}
+.navigator{
+    overflow: hidden;
+}
+.list{
+    margin-bottom: 20rpx;
+    height: 200rpx;
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+    
+}
+.imgs{
+    float: left;
+    margin-left: 25px;
+    
+}
+.imgs image{
+    width: 150rpx;
+    height: 150rpx;
+    display: block;
+}
+.infos{
+    float: left;
+    height: 30%;
+    width: 280rpx;
+    padding: 20rpx 0 0 20rpx;
+}
+.title{
+    font-size: 37rpx;
+    font-family: "微软雅黑";
+    color: gray;
+    
+}
+.loadMore{
+    text-align: center;
+    margin: 20px;
+    color: #aaa;
+    font-size: 37rpx;
+}
+.check{
+  width: 20%;
+  height: 20px;
+  border: 1px solid #2090fe;
+  font-size: 13px;
+  font-family: "微软雅黑";
+  float: right;
+  margin-top: 30px;
+  margin-right: 7px;
+  color: #2090fe;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 10%;
+  
+  }
+
+
+/*操作
+.operate{
+  width: 60%;
+  font-size: 12px;
+  color: gray;
+  height: 30px;
+  background-color: green;
+  margin-left: 43%;
+  margin-top: 12%;
+
+}
+.op{
+  background-color: black;
+  width: 45%;
+  height: 25px;
+  margin-left: 5px; 
+  float: left;
+}
+.opimg{
+  width: 20px;
+  height:20px;
+  float: left;
+}
+.opnum{
+  float: right;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 70%;
+  height: 20px;
+}*/

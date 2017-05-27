@@ -1,0 +1,95 @@
+ <view class="weightline"></view>
+ <view class="devide">我的日程</view>
+ <view class="line"></view>
+<!--index.wxml-->
+<view class="calendar">
+  <view class="time">
+    <view>
+      <text class="t_blue">{{year}}</text>年
+      <text class="t_blue">{{month}}</text>月
+    </view>
+    <view style="text-align: right;">
+      本月已签到
+      <text class="t_red">{{calendarSignDay}}</text>天
+    </view>
+  </view>
+  <view class="weekName">
+    <view class="sunday">日</view>
+    <view class="monday">一</view>
+    <view class="tuesday">二</view>
+    <view class="wednesday">三</view>
+    <view class="thursday">四</view>
+    <view class="friday">五</view>
+    <view class="saturday">六</view>
+  </view>
+  <view class="week">
+
+    <!--填补空格-->
+    <view wx:for="{{nbsp}}">\n</view>
+
+    <!--开心循环日期-->
+    <view wx:for="{{date-1}}" style="color:gainsboro;">
+      <text wx:if="{{item+1==calendarSignData[item+1]}}" style="color:red;font-size:22rpx;">已签到</text>
+      <text wx:else="">{{item+1}}</text>
+    </view>
+    <view style="border-bottom: 1px solid blue; padding-bottom:8rpx;">
+      <text wx:if="{{date==calendarSignData[date]}}" style="color:red;font-size:22rpx;  border-radius: 50%;background-color: ghostwhite">已签到</text>
+      <text wx:else="" style="color:blue;">{{date}}</text>
+    </view>
+    <view wx:for="{{monthDaySize-date}}">{{item+date+1}}</view>
+  </view>
+  <view class="calendarSign">
+    <button wx:if="{{date!=calendarSignData[date]}}" style="color:white;background-color:#2090fe;" bindtap="calendarSign">签到</button>
+    <button wx:else="">今日已签到</button>
+  </view>
+</view>
+
+ <view class="weightline"></view>
+ <view class="devide">学习记录</view>
+ <view class="line"></view>
+
+<view class="history">
+   <view class="list">
+    <view class="word">你已经做过了</view>
+    <view class="demo">{{lastid}}</view>
+    <view class="word">道题</view>  
+   </view>
+
+   <view class="list">
+    <view class="word">你已经选过了</view>
+    <view class="demo">{{lastid2}}</view>
+    <view class="word">门课</view> 
+  </view>
+</view>
+
+
+ <view class="weightline"></view>
+ <view class="devide">悄悄话</view>
+ <view class="line"></view>
+
+<form bindsubmit="formSubmit">
+  
+  <view class="send-box">
+    <input name="username" style="padding-left: 15px;" placeholder="你的悄悄话..." value="{{inputVal}}" bindinput="changeInputVal" placeholder-class="place-input" class="input" />
+     <button class="but" formType="submit" type="primary" bindtap="addMsg" style="background:white; color: #2090fe;line-height: 25px;">发送</button>
+  </view>
+
+
+</form>
+
+
+
+  <text class="msg-info" wx:if="{{msgData.length==0}}">暂无留言...~^_^~</text>
+
+  <!--留言列表-->
+    <view Class="list-view">
+      <view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+          <text class="text1">{{item.msg}}</text>
+      </view>
+    </view>
+
+
+
+
+
+

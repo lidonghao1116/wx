@@ -1,0 +1,29 @@
+/* pages/chat/chat.wxss */
+.text{
+   text-align: center;
+}
+.bottomArea{
+  width:100%;
+  position:fixed;
+  bottom:0px;
+  border-top: 1px solid #333333;
+}
+.inputArea{
+  text-align: center;
+  width:100%;
+  font-size:16px;
+}
+
+.message{
+  background-color: white;
+  width:95%;
+  padding-left: 5%;
+  height: 45px;
+}
+
+.sendButton{
+
+  height: 40px;
+  font-size: 16px;
+  width:100%;
+}

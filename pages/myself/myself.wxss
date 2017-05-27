@@ -1,0 +1,61 @@
+
+/*头像*/
+.head{
+  height:130px;
+  width: 100%;
+}
+.headstyle{
+  width:30%;
+  height: 70%;
+  margin-left: 35%;
+  margin-top: -40px;
+  border-radius: 50%;
+}
+.name{
+   float: left;
+   text-align: center;
+   width: 100%;
+   height: 20%;
+   font-size: 20px;
+   color: #2090fe;
+   font-weight: bold;
+}
+/*链接*/
+
+.manu{
+  width: 100%;
+  margin-top: -7%;
+}
+.navigator{
+    margin-bottom: 43px;
+    height: 79px;
+    width: 100%;
+}
+.img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 15%;
+    /*border-radius: 50%;*/
+}
+.img2{
+  margin-top: 7px;
+    width: 12px;
+    height: 12px;
+    float: right;
+    margin-right: 15%;
+    /*border-radius: 50%;*/
+}
+.linkname{
+  width: 57%;
+  height: 70%;
+  margin-left: 5%;
+  float: left;
+  font-size: 43rpx;
+  font-family: "微软雅黑";
+  color: gray;
+  border-bottom: 1px solid gainsboro;
+  padding-left: 7%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}

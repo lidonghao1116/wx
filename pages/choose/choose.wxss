@@ -1,0 +1,143 @@
+/**index.wxss**/
+/**index.wxss**/
+
+.card_wrap {
+  background: #f2f2f6;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card_wrap .card_item {
+  position: absolute;
+  width: 80%;
+
+}
+
+
+
+
+
+/*超过三张默认被第三张所覆盖*/
+.card_wrap .card_item image {
+  display: block;
+  width: 100%;
+  height:600rpx;
+  /*borderimage-radius: 10px;*/
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /*box-shadow: 6px 23px 50px 10px #ccc;*/
+}
+
+
+
+.card_info {
+    height: 160rpx;
+    background: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 6px 8px 50px 10px #ccc;
+}
+
+.info_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info_title{
+  font-size: 20px;
+  padding-left: 10px;
+  color: #2090fe;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.card_info_other{
+    height: 160rpx;
+    background: ghostwhite;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 6px 8px 50px 10px #ccc;
+}
+
+
+
+
+
+
+
+/* pages/choosepro/choosepro.wxss */
+
+
+
+.title{
+  font-size: 30px;
+  width: 100%;
+  height: 40px;
+  color: #2090fe;
+  text-align: center;
+  opacity: 1.0;
+  z-index: 100;
+  font-family: "微软雅黑";
+}
+
+
+.bottomArea{
+  height: 100px;
+  width:77%;
+  margin-left: 20%;
+  margin-top: -10%;
+
+
+
+  }
+
+.inputArea{ 
+  width:70%;
+  font-size:19px;
+  border-width: medium;
+  float: left;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 34px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.message{
+  width:100%;
+  padding-left: 5%;
+  height: 99%;
+}
+
+.sendButton{
+  height: 30px;
+  margin-left: 1px;
+  font-size: 14px;
+  width:70%;
+  color: white;
+  background-color: #2090fe;
+  text-align: center;
+  opacity: 1.0;
+  padding-top: -50px;
+}
+
+.linkbutton{
+    text-align: center;
+    margin-top:190px;
+    height: 27px;
+    font-size: 15px;
+    color:#2090fe;
+    width: 60%;
+    margin-left: 20%;
+    padding-top:7px;
+    border-radius: 3%;
+    z-index: 10000000;
+    text-decoration: underline;
+
+}
+
+
+
+

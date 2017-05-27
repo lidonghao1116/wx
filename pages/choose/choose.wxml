@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container" style="margin-top:-10%;margin-left:12%;">
+        <view class="card_wrap" disable-scroll="true">        
+                                           
+          <view class="card_item card1 ">
+              <image src="../../../images/3.jpg" catchtap="like" style="opacity: 1.0;" ></image>
+              <view class="card_info">
+                  <view class="info_top">
+                      <view class="info_title">输入你想选的课程名称</view>
+                  </view> 
+              </view>
+          </view>
+                                           
+               
+      </view>
+ </view>
+
+
+   
+
+    <view class="bottomArea">
+        <form bindreset="send">
+            <view class="inputArea">
+                <input type="text" class="message" bindinput="bindKeyInput"/>
+            </view>           
+           
+            <button  form-type="reset" class="sendButton" bindtap="listenerButton" >确认</button>
+       
+        </form>        
+    </view>
+    
+<toast hidden="{{hiddenToast}}" duration="1500" bindchange="toastHidden" >添加成功</toast>
+
+
+
+
+<view class="linkbutton" >
+      <navigator url="../../pages/allclass/allclass" >返回</navigator>
+</view>

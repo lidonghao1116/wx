@@ -1,0 +1,291 @@
+.warp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+    font-family: "微软雅黑";
+    color: #2090fe;
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    padding: 20rpx;
+    font-size: 45rpx;
+
+}
+/*课程内容*/
+.top{
+    float: left;
+    width: 100%;
+    height: 10%;
+
+}
+
+.img{
+    float: left;
+    margin-left: 10px;
+    width: 40%;
+    height: 65%;
+   
+}
+.img image{
+    width: 100px;
+    height: 100px;
+}
+.content{
+    font-size: 13px;
+    float: left;
+    color: gray;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 50%;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: 3%;
+
+}
+.close{
+    text-align: center;
+    margin:30px;
+    font-size: 15px;
+    color:#aaa;
+ 
+    text-decoration: underline;
+}
+
+/*操作*/
+.operate{
+  width: 60%;
+  font-size: 12px;
+  color: gray;
+  height: 30px;
+
+  margin-left: 43%;
+  margin-top: -10%;
+
+}
+.op{
+
+  width: 45%;
+  height: 25px;
+  margin-left: 5px; 
+  float: left;
+}
+.opimg{
+  width: 20px;
+  height:20px;
+  float: left;
+}
+.opnum{
+  float: right;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 70%;
+  height: 20px;
+}
+
+
+/*划分灰色线*/
+.devide{
+  text-align: center;
+  width: 100%;
+  height:15px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 3px; 
+  font-size: 13px;
+ 
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color:  gainsboro;
+  margin-bottom: 10px; 
+}
+.weightline{
+  margin-top: 10px;
+  height: 10px;
+  width: 100%;
+  background-color:  gainsboro;
+}
+
+/*评论区*/
+
+.pageContainer{
+  font-family: "微软雅黑";
+  width:100%;
+  height:100%;
+
+}
+.clear{
+  clear:both;
+}
+
+.topArea{
+
+  width:100%;
+  margin-top: 10px;
+
+}
+
+.selfMessage{
+  float:left;
+  width:100%;
+  text-align: left;
+  margin-left: 5%;
+  
+
+}
+
+.otherMessage{
+  float:left;
+  width:100%;
+  padding-top: 5px;
+  margin-left: 5%;
+  color: black;
+}
+
+.selfMessage .nameInfo{
+  font-size: 15px;
+  width:100%;
+  color:lightblue;
+  margin-left: 12px;
+}
+
+.otherMessage .nameInfo{
+  font-size: 15px;
+  width:100%;
+  color:lightblue;
+}
+
+
+.detailMessage{
+  font-size: 15px;
+  width:82%;
+  color:#2090fe;
+  margin-top: 10px;
+  margin-left: 5%;
+  padding-left: 3%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.bottomArea{
+  height: 100px;
+  width:92%;
+  margin-left: 3%;
+  border: 1px solid lightgrey;
+  border-radius: 3%;
+}
+
+.inputArea{
+  
+  width:63%;
+  font-size:14px;
+  border-width: medium;
+  border-color: gray;
+  float: left;
+  margin-top: 3%;
+  
+}
+
+.message{
+
+
+  width:100%;
+  padding-left: 5%;
+  height: 70px;
+}
+
+.sendButton{
+  height: 23px;
+  font-size: 13px;
+  width:19%;
+  color: white;
+  background-color: #2090fe;
+  float: right;
+  margin-right: 3%;
+  margin-top: 23%;
+  padding-bottom: 10%;
+}
+
+
+
+
+
+/*课堂作业*/
+.title{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.navigations{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    border: 1px solid;
+    border-color: ghostwhite;
+    background-color: dodgerblue; 
+    color: white;
+}
+.navigation_item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+wx-button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+wx-label {
+  display: block;
+  margin-top: 10rpx;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+.section{
+    margin-bottom: 30rpx;
+    color: gray;
+    font-size: 12px;
+    font-family: "微软雅黑";
+
+}
+.put{
+      border-bottom: 1px solid gray;
+}
+.section_gap{
+    padding: 0 30rpx;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5%;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
+.nav{
+  width: 100%;
+}
+
+.linkbutton{
+
+  position:fixed;
+  bottom:5px;
+  height: 20px;
+  font-size: 13px;
+  width:19%;
+  color: white;
+  background-color: #2090fe;
+  margin-left: 73%;
+  border-radius: 10%;
+  padding-top: 7px;
+  padding-left: 10px;
+
+}

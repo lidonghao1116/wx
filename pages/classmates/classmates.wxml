@@ -1,0 +1,55 @@
+<view class="navigations">
+    <navigator url="../../pages/exdetail/exdetail" >
+        <view class="navigation_item">我的课程</view>
+    </navigator>    
+    <navigator url="../../pages/classmates/classmates" >
+        <view class="navigation_item">我的同学</view>
+    </navigator>
+</view>
+
+<view class="head"><image class="headstyle" src="../../../images/head.png"></image></view>
+
+<view class="devide">我的老师</view>
+
+
+<view class="warp">
+  <view class="list listone">
+  <view class="imgs"><image src="../../../images/1187255.png" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+     <view class="infos">
+       <view class="title">admin</view>    
+     </view> 
+  </view>
+
+
+
+<!--文章列表模板 begin-->
+  <template name="items">
+   <navigator url="../../pages/detail/detail?id={{id}}"
+   hover-class="navigator-hover">
+ 
+     </navigator>  
+  </template>
+
+</view>
+
+
+
+<view class="devide">我的同学</view>
+
+
+<view class="warp">
+
+<!--文章列表模板 begin-->
+  <template name="items">
+   <navigator url="../../pages/detail/detail?id={{id}}"
+   hover-class="navigator-hover">
+     <view class="imgs"><image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+     <view class="infos">
+       <view class="title">{{title}}</view>    
+     </view>  
+     </navigator>  
+  </template>
+  <view wx:for="{{newsList}}" class="list">
+    <template is="items" data="{{...item}}"/>
+  </view>
+</view>

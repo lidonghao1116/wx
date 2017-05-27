@@ -1,0 +1,99 @@
+/* pages/myclass/myclass.wxss */
+.slide-image{  
+    width: 100%;  
+}  
+
+/* pages/navigations/index.wxss */
+.title{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.navigations{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    border: 1px solid;
+    border-color: ghostwhite;
+    background-color: dodgerblue; 
+    color: white;
+}
+.navigation_item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.copyright{
+    color: white;
+    padding: 5px;
+    margin-top: 150px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-align: center;
+    background-color: darkblue;
+}
+.copyright_item{
+    margin-top: 5px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.warp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+}
+.navigator{
+    overflow: hidden;
+}
+.list{
+    margin-bottom: 30rpx;
+    height: 150rpx;
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+
+}
+.imgs{
+    float: left;
+    margin-left: 30px;
+    
+}
+.imgs image{
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+    border-radius: 50%;
+}
+.infos{
+    float: left;
+    height: 200rpx;
+    width: 280rpx;
+    padding: 20rpx 0 0 20rpx;
+}
+.title{
+    font-size: 37rpx;
+    font-family: "微软雅黑";
+    color: gray;
+    
+}
+.loadMore{
+    text-align: center;
+    margin: 20px;
+    color: #aaa;
+    font-size: 37rpx;
+}
+
+.devide{
+  width: 100%;
+  height:15px;
+  color: gray;
+  background-color:gainsboro;
+  margin-top: 3px;
+  margin-bottom: 5px; 
+  font-size: 12px;
+  padding-left: 10px;
+}
+

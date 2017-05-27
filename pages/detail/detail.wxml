@@ -1,0 +1,149 @@
+<!--pages/detail/detail.wxml-->
+
+  <view class="warp">
+      <view class="title">{{info.title}}</view>
+      <navigator url="../../pages/video/video" >      
+          <view class="top">         
+                <view class="img">
+                  <image src="{{info.img}}" class="in-img" background-size="cover"model="scaleToFill"></image>         
+                </view>
+                <view class="content">{{info.content}}</view>
+          </view>
+      </navigator>  
+
+   <view class="operate">
+     <view class="op">
+       <image class="opimg" src="{{url}}"></image>
+       <view class="opnum" bindtap="add">点赞（{{numberzan}}）</view>
+
+     </view>
+     
+     <view class="op">
+       <image class="opimg" src="../../../images/16.png"></image>
+        <view class="opnum" bindtap="dianzan">评论（{{numberping}}）</view>
+     </view>
+  </view>
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+ <view class="weightline"></view>
+ <view class="devide">课堂作业…</view>
+ <view class="line"></view>
+
+
+
+<form bindsubmit="formSubmit">
+  
+  <view class="section put">
+    <view class="section__title">你觉得该填写什么？</view>
+    <input name="username" style="padding-left: 15px;" placeholder="你想写点啥都可以~" />
+  </view>
+  
+  <view class="section section_gap">
+    <view class="section__title">多选</view>
+    <checkbox-group name="lot">
+      <label><checkbox value="0"/>选项一</label>
+      <label><checkbox value="1"/>选项二</label>
+      <label><checkbox value="2"/>选项三</label>
+    </checkbox-group>
+  </view>
+
+  <view class="section section_gap">
+    <view class="section__title">单选</view>
+    <radio-group name="only">
+      <label><radio value="0"/>选项一</label>
+      <label><radio value="2"/>选项二</label>
+      <label><radio value="3"/>选项三</label>
+    </radio-group>
+  </view>
+
+
+
+ <view class="section section_gap">
+  <view class="section__title">你所在地区:</view>
+  <picker value="{{area}}" range="{{array}}" bindchange="bindPickerChange">
+    <view class="picker">
+      当前选择：{{array[area]}}
+    </view>
+  </picker>
+</view>
+
+
+<view class="section section_gap">
+  <text class="section__title">请打分</text>
+  <view class="body-view">
+    <slider bindchange="bindSliderChange" value="{{score}}" max="100" min="0" show-value/>
+  </view>
+</view>
+
+
+  <view class="section section_gap">
+    <view class="section__title">你是忠实学生吗</view>
+    <switch name="is_dev" value="{{is_dev}}"/>
+  </view>
+  
+
+  <view class="btn-area" >
+    <navigator url="../../pages/exdetail/exdetail" >
+        <button formType="submit">提交</button>
+    </navigator>
+  
+  </view>
+</form>
+
+
+
+  <view class="linkbutton" >
+      <navigator url="../../pages/navigation1/navigation1" >课下作业</navigator>
+  </view>
+
+
+<view class="weightline"></view>
+<view class="devide">我想说…</view>
+<view class="line"></view>
+
+
+
+<view class="pageContainer">
+
+    <view class="bottomArea">
+        <form bindreset="send">
+            <view class="inputArea">
+                <input type="text" placeholder="{{placeholderText}}" class="message" bindinput="bindKeyInput"/>
+            </view>
+            <button  form-type="reset" class="sendButton" bindtap="add2" >发送</button>
+        </form>
+    </view>
+    <view class="topArea">
+       <view wx:for="{{messageArray}}" wx:for-index="idx" wx:for-item="itemName">
+            <view class="selfMessage" wx:if="{{itemName.type == 'self'}}">
+                <view class="nameInfo">{{itemName.name+ " " + itemName.time}}</view>
+                <view class="detailMessage">{{itemName.message}}</view>
+            </view>
+            <view class="otherMessage" wx:else>
+                <view class="nameInfo">{{itemName.name+ " " + itemName.time}}</view>
+                <view class="detailMessage">{{itemName.message}}</view>
+            </view>
+            <view class="clear"></view>
+        </view>
+    </view>
+
+</view>
+
+
+
+
+
+<navigator url="../../pages/exdetail/exdetail" >
+        <view class="close">历史课程</view>
+    </navigator> 

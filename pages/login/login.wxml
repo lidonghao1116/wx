@@ -1,0 +1,42 @@
+
+<contact-button 
+  type="default-dark" 
+  size="100"
+  session-from="weapp" 
+>
+</contact-button>
+
+
+
+
+ <view class="devide">来个提醒</view>
+ <view class="line"></view>
+ <view class="weightline"></view>
+
+
+<view class="remainder">
+        <form report-submit bindsubmit="formSubmit">
+      
+        <label class="label">
+          <input class="input" type="text" placeholder="请输入上课地点" name="site" />
+        </label>
+
+
+
+        <label><view class="lab">选择日期：</view>
+            <picker class="pick" mode="date" name="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="picker">
+              当前选择: {{date}}
+            </view>
+          </picker>
+        </label>
+        
+        <label>
+          <input class="input" type="text" placeholder="请输入课程名称" name="name"/>
+        </label>
+        <button class="but" form-type="submit">来个提醒</button>
+      </form>
+</view>
+
+
+

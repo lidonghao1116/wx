@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",   
+    "pages/main/main",
+    "pages/navigations/index",
+    "pages/navigation1/navigation1",
+    "pages/navigation2/navigation2",
+    "pages/navigation3/navigation3",     
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/chat/chat",
+    "pages/chatroom/chatroom",
+    "pages/exdetail/exdetail",
+    "pages/classmates/classmates",
+    "pages/myself/myself",
+    "pages/myclass/myclass",
+    "pages/news/news",
+    "pages/newsdetail/newsdetail",
+    "pages/historydetail/historydetail",
+    "pages/allclass/allclass",
+    "pages/choosepro/choosepro",
+    "pages/afteradddetail/afteradddetail",
+    "pages/video/video",
+    "pages/choose/choose",
+    "pages/sign/sign"
+
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "我的课堂",
+    "navigationBarTextStyle":"white"   
+  },
+  "tabBar":
+   {
+     "color": "#666666",
+     "selectedColor": "#2090fe",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/1.png",
+      "selectedIconPath": "images/1.png"
+    },{
+      "pagePath": "pages/news/news",
+      "text": "资讯",
+      "iconPath": "images/2.png",
+      "selectedIconPath": "images/2.png"
+    },{
+      "pagePath": "pages/navigations/index",
+      "text": "课程",
+      "iconPath": "images/3.png",
+      "selectedIconPath": "images/3.png"
+    },{
+      "pagePath": "pages/myself/myself",
+      "text": "个人",
+      "iconPath": "images/4.png",
+      "selectedIconPath": "images/4.png"
+    },{
+      "pagePath": "pages/login/login",
+      "text": "客服",
+      "iconPath": "images/5.png",
+      "selectedIconPath": "images/5.png"
+    }]
+  }
+  
+  }

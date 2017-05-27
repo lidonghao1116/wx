@@ -1,0 +1,41 @@
+<view class="navigations">
+    <navigator url="../../pages/navigations/index" >
+        <view class="navigation_item">我的课程</view>
+    </navigator>    
+    <navigator url="../../pages/navigation1/navigation1" >
+        <view class="navigation_item">我的作业</view>
+    </navigator>
+    <navigator url="../../pages/exdetail/exdetail" >
+        <view class="navigation_item">课程详情</view>
+    </navigator>
+    <navigator url="../../pages/navigation3/navigation3" >
+        <view class="navigation_item">聊天室</view>
+    </navigator>
+</view>
+
+
+
+<view class="pageContainer">
+    <view class="topArea">
+       <view wx:for="{{messageArray}}" wx:for-index="idx" wx:for-item="itemName">
+            <view class="selfMessage" wx:if="{{itemName.type == 'self'}}">
+                <view class="nameInfo">{{itemName.name+ " " + itemName.time}}</view>
+                <view class="detailMessage">{{itemName.message}}</view>
+            </view>
+            <view class="otherMessage" wx:else>
+                <view class="nameInfo">{{itemName.name+ " " + itemName.time}}</view>
+                <view class="detailMessage">{{itemName.message}}</view>
+            </view>
+            <view class="clear"></view>
+        </view>
+    </view>
+    <view class="bottomArea">
+        <form bindreset="send">
+            <view class="inputArea">
+                <input type="text" placeholder="{{placeholderText}}" class="message" bindinput="bindKeyInput"/>
+            </view>
+            <button  form-type="reset" class="sendButton">发送</button>
+        </form>
+    </view>
+</view>
+

@@ -1,0 +1,15 @@
+.title{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.navigations{
+    display: flex;
+    justify-content: space-around;
+background-color: #2090fe; 
+    color: white;
+}
+.navigation_item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
